@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Rutas de hpp
+Route::resource('/PrimerVista', 'hpp\controllerusers');
+//Rutas de hpp array
+Route::get('/ArrayconJson', 'hpp\controllerusers@getadministradores')->name('administradores');
